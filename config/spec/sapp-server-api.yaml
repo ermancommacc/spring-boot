@@ -1,0 +1,19 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: SAPP Server
+servers:
+  - url: http://127.0.0.1:8080
+security:
+  - barearAuth: []
+paths:
+  /hello:
+    get:
+      summary: say hello
+      operationId: sayHello
+      description: say hello
+      tags:
+        - Hello
+      responses:
+        200:
+          $ref: ''
